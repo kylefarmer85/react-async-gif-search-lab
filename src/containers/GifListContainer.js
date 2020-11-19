@@ -11,7 +11,7 @@ class GifListContainer extends Component {
   }
 
   onSubmit = (searchTerm) => {
-    let url = `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=dc6zaTOxFJmzC&rating=g&limit=3`
+    let url = `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=dc6zaTOxFJmzC&&limit=3`
   
     fetch(url)
     .then(resp => resp.json()) 
