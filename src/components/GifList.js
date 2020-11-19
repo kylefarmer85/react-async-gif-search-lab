@@ -11,7 +11,7 @@ class GifList extends Component {
     return (
       <div>
         <ul>
-          <li>
+          {/* <li>
             <img src={ this.props.gifs[0] }/>
           </li>
           <li>
@@ -19,7 +19,10 @@ class GifList extends Component {
           </li>
           <li>
             <img src={ this.props.gifs[2] }/>
-          </li>
+          </li> */}
+
+          { this.props.gifs.map(gif => <img src={ gif } />) }
+          
         </ul>
       </div>
     );
